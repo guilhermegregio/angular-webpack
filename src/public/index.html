@@ -1,13 +1,19 @@
 <!doctype html>
-<html ng-app="app" lang="en">
+<html ng-app="app" ng-strict-di lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Angular App</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+	<meta charset="UTF-8">
+	<title>Angular App</title>
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
 
-  <base href="/">
+	<base href="/">
 </head>
 <body>
-  Hello, World
+<h1>Hello, World</h1>
+<nav>
+	<a ui-sref="home">Home</a>
+	<a ui-sref="home.about">About</a>
+	<a ui-sref="login">Login</a>
+</nav>
+<ui-view></ui-view>
 </body>
 </html>
